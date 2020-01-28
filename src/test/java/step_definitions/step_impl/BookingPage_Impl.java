@@ -29,6 +29,11 @@ public class BookingPage_Impl {
                 break;
             case "cookies": SeleniumUtils.click(bookingPage.cookies_Btn);
                 break;
+            case "book":
+                SeleniumUtils.click(bookingPage.book_Btn);
+                break;
+            case "book now package":
+                SeleniumUtils.click(bookingPage.package_Book_Now_Btn);
         }
     }
 

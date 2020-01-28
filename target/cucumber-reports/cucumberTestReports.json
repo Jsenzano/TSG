@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-26T18:13:14.850Z",
+        "start_timestamp": "2020-01-28T15:55:57.561Z",
         "before": [
           {
             "result": {
-              "duration": 11111348888,
-              "status": "passed"
+              "duration": 661500,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.beforeScenario()"
@@ -16,14 +16,14 @@
           }
         ],
         "line": 4,
-        "name": "Verify coupon code",
+        "name": "Verify title of Home Page",
         "description": "",
-        "id": "booking-pages-test;verify-coupon-code",
+        "id": "home-page-testing;verify-title-of-home-page",
         "after": [
           {
             "result": {
-              "duration": 345983840,
-              "status": "passed"
+              "duration": 39700,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.afterScenario()"
@@ -35,70 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4924300329,
-              "status": "passed"
+              "duration": 2142400,
+              "status": "skipped"
             },
             "line": 5,
-            "name": "User opens Admin home page",
-            "match": {
-              "location": "AdminHomePage_STEPS.user_opens_Admin_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3264281259,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User logsin with admin account",
-            "match": {
-              "location": "AdminHomePage_STEPS.user_logsin_with_admin_account()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7315941036,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User navigate to Coupons page",
-            "match": {
-              "location": "AdminHomePage_STEPS.user_navigate_to_Coupons_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16652303645,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Creates a new coupon",
-            "match": {
-              "location": "AdminCouponPage_STEPS.creates_a_new_coupon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6512736002,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Verifies coupon is created",
-            "match": {
-              "location": "AdminCouponPage_STEPS.verifies_coupon_is_created()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7138485755,
-              "status": "passed"
-            },
-            "line": 10,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -107,71 +47,32 @@
           },
           {
             "result": {
-              "duration": 6678348633,
-              "status": "passed"
+              "duration": 1541900,
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "User opens \"first tour\" featured tour",
+            "line": 6,
+            "name": "User sees TSG Banner",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"first tour\"",
-                  "offset": 11
-                }
-              ],
-              "location": "HomePage_STEPS.user_opens_featured_tour(String)"
+              "location": "HomePage_STEPS.user_sees_TSG_Banner()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4482436835,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 12,
-            "name": "Clicks on \"Book Now\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Book Now\"",
-                  "offset": 10
-                }
-              ],
-              "location": "BookingPage_STEPS.clicks_on_Book_Now_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2602236395,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Applies existing coupon code",
-            "match": {
-              "location": "BookingPage_STEPS.applies_existing_coupon_code()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1475110547,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Verifies positive message is displayed",
-            "match": {
-              "location": "BookingPage_STEPS.verifies_positive_message_is_displayed()"
-            },
+            "line": 7,
+            "name": "Verifies title is U.S Department of State - Bureau of Consular Affairs",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@bookingPage"
+            "name": "@homePage"
           },
           {
-            "name": "@couponTest"
+            "name": "@verifytitle"
           },
           {
             "name": "@smoke"
@@ -179,14 +80,14 @@
         ]
       }
     ],
-    "name": "Booking Pages Test",
+    "name": "Home page Testing",
     "description": "",
-    "id": "booking-pages-test",
+    "id": "home-page-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BookingPage.feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
     "tags": [
       {
-        "name": "@bookingPage",
+        "name": "@homePage",
         "type": "Tag",
         "location": {
           "line": 1,

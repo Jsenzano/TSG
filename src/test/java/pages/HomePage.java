@@ -13,8 +13,8 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//a[@href='https://www.phptravels.net/']/img")
-    public WebElement logo;
+    @FindBy(xpath = "//a[@class='tsg-rwd-site-website-nameplate']")
+    public WebElement tsg_Banner;
 
     @FindBy(xpath = "(//a[@id='dropdownCurrency'])[2]")
     public WebElement myAccount_Btn;
@@ -28,9 +28,10 @@ public class HomePage {
     @FindBy(xpath = "//div[@class='container']//div[1]//figure[1]//a[1]")
     public WebElement firstFeaturedTour;
 
-    public void rand(){
-        logo.sendKeys();
-    }
+    @FindBy(xpath = "//div[@class=\"col\"][8]")
+    public WebElement lastFeaturedTour;
+
+
 
 
 

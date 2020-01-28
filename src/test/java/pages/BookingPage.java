@@ -27,4 +27,23 @@ public class BookingPage {
     @FindBy(xpath = "//button[@aria-label='dismiss cookie message']")
     public WebElement cookies_Btn;
 
+    @FindBy(xpath = "//tr[5]/td[6]")
+    public WebElement book_Btn;
+
+    @FindBy(name = "firstname")
+    public WebElement first_Name_Field;
+
+    @FindBy(name = "email")
+    public WebElement email_Field;
+
+    @FindBy(xpath = "//*[@id=\"send_enquery\"]/div/div[2]/div[2]/div[1]/div/input")
+    public WebElement phone_Field;
+
+    @FindBy(xpath = "//*[@id=\"send_enquery\"]/div/div[2]/div[2]/div[2]/div/input")
+    public WebElement address_Field;
+
+    @FindBy(xpath = "//button[@id='ClickMyButton']")
+    public WebElement package_Book_Now_Btn;
+
+
 }

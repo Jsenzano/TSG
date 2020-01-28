@@ -21,20 +21,17 @@ public class HomePage_STEPS {
         Driver.getDriver().get(ConfigReader.readProperty("url"));
     }
 
-    @When("User sees My Account button")
-    public void user_sees_My_Account_button() {
-        SeleniumUtils.waitForVisibilityOfElement(homePage.myAccount_Btn);
+    @When("User sees TSG Banner")
+    public void user_sees_TSG_Banner() {
+        SeleniumUtils.waitForVisibilityOfElement(homePage.tsg_Banner);
     }
 
-    @Then("Verifies title is PHPTRAVELS | Travel Technology Partner")
-    public void verifies_title_is_PHPTRAVELS_Travel_Technology_Partner() {
-        Assert.assertEquals("PHPTRAVELS | Travel Technology Partner", driver.getTitle());
+    @Then("Verifies title is U.S Department of State - Bureau of Consular Affairs")
+    public void verifies_title_is_U_S_Department_of_State_Bureau_of_Consular_Affairs() {
+        Assert.assertEquals("U.S. DEPARTMENT of STATE - BUREAU of CONSULAR AFFAIRS",driver.getTitle());
     }
 
-    @When("User opens {string} featured tour")
-    public void user_opens_featured_tour(String string) {
-        homePage_impl.openFeaturedTour(string);
-    }
+
 
 
 }

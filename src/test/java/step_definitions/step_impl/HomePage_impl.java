@@ -27,7 +27,8 @@ public class HomePage_impl {
         switch (name.toLowerCase()){
             case "first tour": SeleniumUtils.click(homePage.firstFeaturedTour);
                 break;
-            case "second tour":
+            case "last tour": SeleniumUtils.click(homePage.lastFeaturedTour);
+                break;
         }
     }
 
