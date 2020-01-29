@@ -14,18 +14,9 @@ public class HomePage_impl {
         return driver.getTitle();
     }
 
-    public void clickMyAccountBtn(){
-        SeleniumUtils.click(homePage.myAccount_Btn);
-    }
-
-    public void clickSignUp(){
-        clickMyAccountBtn();
-        SeleniumUtils.click(homePage.signUp_Btn);
-    }
-
-    public void openFeaturedTour(String name){
+    public void openTab(String name){
         switch (name.toLowerCase()){
-            case "first tour": SeleniumUtils.click(homePage.firstFeaturedTour);
+            case "passport": SeleniumUtils.click(homePage.passportTab);
                 break;
             case "last tour": SeleniumUtils.click(homePage.lastFeaturedTour);
                 break;

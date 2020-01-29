@@ -13,7 +13,7 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//a[@class='tsg-rwd-site-website-nameplate']")
+    @FindBy(xpath = "//div[@class='nameplate-website-tagline']")
     public WebElement tsg_Banner;
 
     @FindBy(xpath = "(//a[@id='dropdownCurrency'])[2]")
@@ -30,6 +30,11 @@ public class HomePage {
 
     @FindBy(xpath = "//div[@class=\"col\"][8]")
     public WebElement lastFeaturedTour;
+
+    @FindBy(xpath = "//*[@class='BusinessUnitsMenu']/li[4]")
+    public WebElement passportTab;
+
+
 
 
 

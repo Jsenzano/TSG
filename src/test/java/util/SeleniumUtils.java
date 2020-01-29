@@ -2,6 +2,7 @@ package util;
 
 import contstants.SeleniumConstants;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -86,9 +87,7 @@ public class SeleniumUtils{
     }
 
 
-
-
-
-
-
+    public static void clickEnter(WebElement element) {
+        element.sendKeys(Keys.RETURN);
+    }
 }

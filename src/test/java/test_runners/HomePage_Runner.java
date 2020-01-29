@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports/cucumberTestReports.json",
         },
         tags = {"@homePage"},
-        dryRun = true
+        dryRun = false
 )
 public class HomePage_Runner {
 }

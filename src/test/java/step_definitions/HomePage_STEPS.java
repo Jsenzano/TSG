@@ -27,8 +27,10 @@ public class HomePage_STEPS {
     }
 
     @Then("Verifies title is U.S Department of State - Bureau of Consular Affairs")
-    public void verifies_title_is_U_S_Department_of_State_Bureau_of_Consular_Affairs() {
-        Assert.assertEquals("U.S. DEPARTMENT of STATE - BUREAU of CONSULAR AFFAIRS",driver.getTitle());
+    public void verifies_title_is_U_S_Department_of_State_Bureau_of_Consular_Affairs() throws InterruptedException {
+        Thread.sleep(2000);
+        Assert.assertEquals("Travel",driver.getTitle());
+
     }
 
 
