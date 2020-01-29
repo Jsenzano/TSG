@@ -13,7 +13,7 @@ import util.Driver;
 import util.SeleniumUtils;
 
 public class PassportPage_STEPS {
-    private static WebDriver driver = Driver.getDriver();
+    public static WebDriver driver = Driver.getDriver();
     PassportPage_impl passportPage = new PassportPage_impl();
 
     @When("User navigates Passports page")
@@ -45,8 +45,70 @@ public class PassportPage_STEPS {
         passportPage.passportHistory();
     }
 
+    @Then("User selects yes passport possession")
+    public void user_selects_yes_passport_possession() {
+        passportPage.passportPossession();
+    }
+
+    @Then("User selects yes replacing passport")
+    public void user_selects_yes_replacing_passport() {
+        passportPage.passportValidity();
+    }
+
+    @Then("User selects domestic option")
+    public void user_selects_domestic_option() {
+        passportPage.passportIssuanceLocation();
+    }
+
+    @Then("User selects valid more than a year")
+    public void user_selects_valid_more_than_a_year() {
+        passportPage.validityOfPassportYear();
+    }
+
+    @Then("user selects passport limited no")
+    public void user_selects_passport_limited_no() {
+        passportPage.passportLimited();
+    }
+
+    @Then("User enters issuance date")
+    public void user_enters_issuance_date() {
+        passportPage.passportIssuaneDate();
+    }
+
     @Then("User click Next")
     public void userClickNext() {
         passportPage.clickNext();
+    }
+
+    @Then("User slects Passport Book")
+    public void user_slects_Passport_Book() {
+        passportPage.selectPassportBook();
+    }
+
+    @Then("User selects Standard method")
+    public void user_selects_Standard_method() {
+        passportPage.selectStandardMethod();
+    }
+
+    @Then("User selects Standard Delivery")
+    public void user_selects_Standard_Delivery() {
+        passportPage.selectDelieveryMethod();
+    }
+
+    @Then("User clicks the Calculate button")
+    public void user_clicks_the_Calculate_button() {
+        passportPage.calculateTotalAmout_Btn();
+    }
+
+    @Then("user verifies total")
+    public void user_verifies_total() {
+        passportPage.verifyTotalAmount();
+    }
+
+    @Then("user clicks next")
+    public void user_clicks_next() {
+        passportPage.clickNextToComplete();
+
+        Assert.assertEquals(passportPage,driver.getTitle());
     }
 }

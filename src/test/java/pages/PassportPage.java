@@ -27,4 +27,48 @@ public class PassportPage {
 
     @FindBy(xpath = "//*[@id=\"passport_eligibility\"]/div[5]/div")
     public WebElement next_Btn;
+
+    @FindBy(xpath = "//*[@id='have_passport_yes']")
+    public WebElement yes_Possession_Selection;
+
+    @FindBy(xpath = "//*[@id='replacing_lv_yes']")
+    public WebElement yes_passportValidity_Selection;
+
+    @FindBy(xpath = "//*[@id='lv_domestic']")
+    public WebElement domestic_Selection;
+
+    @FindBy(xpath = "//*[@id='lv_validity_greater']")
+    public WebElement validMore_Selection;
+
+    @FindBy(xpath = "//*[@id='lv_gender_natural_no']")
+    public WebElement no_PassportLimited_Selection;
+
+    @FindBy(name = "lv_expiration_passports_age")
+    public WebElement passportIssuance_Date;
+
+    @FindBy(xpath = "//*[@id=\"cost_under16\"]/fieldset[1]/div/div[1]")
+    public WebElement passportBook_Selection;
+
+    @FindBy(id = "standard_processing")
+    public WebElement standardProcessing_Selection;
+
+    @FindBy (id = "standard_delivery")
+    public WebElement standardDelivery_Selection;
+
+    @FindBy(id="calculate_costs")
+    public WebElement calculate_Btn;
+
+    @FindBy(xpath = "//*[@id=\"cost_summary\"]/div[1]/div[8]/div[2]/span")
+    public WebElement totalAmount;
+
+    @FindBy(id = "next_to_documents")
+    public WebElement finalNext_Btn;
+
+    @FindBy(xpath = "//*[@id=\"new_child_passport_summary\"]/div[2]/div[2]/ul/li[6]")
+    public WebElement finalTotal_Amount;
+
+
+
+
+
 }
