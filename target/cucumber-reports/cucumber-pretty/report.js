@@ -159,3 +159,60 @@ formatter.step({
 formatter.match({
   "location": "PassportPage_STEPS.user_slects_Passport_Book()"
 });
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Standard method",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PassportPage_STEPS.user_selects_Standard_method()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects Standard Delivery",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PassportPage_STEPS.user_selects_Standard_Delivery()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the Calculate button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PassportPage_STEPS.user_clicks_the_Calculate_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies total",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PassportPage_STEPS.user_verifies_total()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks next",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PassportPage_STEPS.user_clicks_next()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+});

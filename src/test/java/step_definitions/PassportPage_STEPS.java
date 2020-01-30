@@ -101,14 +101,13 @@ public class PassportPage_STEPS {
     }
 
     @Then("user verifies total")
-    public void user_verifies_total() {
+    public void user_verifies_total() throws InterruptedException {
         passportPage.verifyTotalAmount();
+        Thread.sleep(10000);
     }
 
     @Then("user clicks next")
     public void user_clicks_next() {
         passportPage.clickNextToComplete();
-
-        Assert.assertEquals(passportPage,driver.getTitle());
     }
 }

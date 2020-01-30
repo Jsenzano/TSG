@@ -46,7 +46,7 @@ public class PassportPage {
     @FindBy(name = "lv_expiration_passports_age")
     public WebElement passportIssuance_Date;
 
-    @FindBy(xpath = "//*[@id=\"cost_under16\"]/fieldset[1]/div/div[1]")
+    @FindBy(xpath = "//*[@id=\"standard_processing\"]")
     public WebElement passportBook_Selection;
 
     @FindBy(id = "standard_processing")
@@ -64,7 +64,7 @@ public class PassportPage {
     @FindBy(id = "next_to_documents")
     public WebElement finalNext_Btn;
 
-    @FindBy(xpath = "//*[@id=\"new_child_passport_summary\"]/div[2]/div[2]/ul/li[6]")
+    @FindBy(css = "#new_child_passport_summary > div:nth-child(2) > div.form_content.well-tsg > ul > li.total > span.usd > span")
     public WebElement finalTotal_Amount;
 
 
