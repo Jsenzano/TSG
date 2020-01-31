@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-30T20:54:08.031Z",
+        "start_timestamp": "2020-01-31T20:16:16.297Z",
         "before": [
           {
             "result": {
-              "duration": 9880380500,
+              "duration": 9931787300,
               "status": "passed"
             },
             "match": {
@@ -18,11 +18,11 @@
         "line": 4,
         "name": "Apply for U.S. Passport",
         "description": "",
-        "id": "register-page-testing;apply-for-u.s.-passport",
+        "id": "passport-renewal;apply-for-u.s.-passport",
         "after": [
           {
             "result": {
-              "duration": 577367600,
+              "duration": 585660700,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2909498200,
+              "duration": 2752429100,
               "status": "passed"
             },
             "line": 5,
@@ -47,236 +47,80 @@
           },
           {
             "result": {
-              "duration": 1806493100,
+              "duration": 1110489800,
               "status": "passed"
             },
             "line": 6,
-            "name": "User navigates Passports page",
+            "name": "User navigates to International Travel",
             "match": {
-              "location": "PassportPage_STEPS.user_navigates_Passports_page()"
+              "location": "InternationalPages_STEPS.user_navigates_to_International_Travel()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4506100,
+              "duration": 1100465300,
               "status": "passed"
             },
             "line": 7,
-            "name": "Verifies title is U.S. Passports",
+            "name": "User navigates to Country Information",
             "match": {
-              "location": "PassportPage_STEPS.verifies_title_is_U_S_Passports()"
+              "location": "CountryInformationPage_STEPS.user_navigates_to_Country_Information()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2659472100,
+              "duration": 7617900,
               "status": "passed"
             },
             "line": 8,
-            "name": "User selects United States",
+            "name": "User verifies Country Info page",
             "match": {
-              "location": "PassportPage_STEPS.userSelectsUnitedStates()"
+              "location": "CountryInformationPage_STEPS.user_verifies_Country_Info_page()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2790933800,
+              "duration": 2811158500,
               "status": "passed"
             },
             "line": 9,
-            "name": "User enters DOB",
+            "name": "User enters a country",
             "match": {
-              "location": "PassportPage_STEPS.userEntersDOB()"
+              "location": "CountryInformationPage_STEPS.user_enters_a_country()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2658291300,
+              "duration": 413891400,
               "status": "passed"
             },
             "line": 10,
-            "name": "User selects passport history",
+            "name": "User verifies correct country info",
             "match": {
-              "location": "PassportPage_STEPS.userSelectsPassportHistory()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 625119900,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User selects yes passport possession",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_yes_passport_possession()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 631896100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User selects yes replacing passport",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_yes_replacing_passport()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 614708100,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User selects domestic option",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_domestic_option()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 625298200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User selects valid more than a year",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_valid_more_than_a_year()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 622074000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user selects passport limited no",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_passport_limited_no()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 742598000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User enters issuance date",
-            "match": {
-              "location": "PassportPage_STEPS.user_enters_issuance_date()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 623517900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User click Next",
-            "match": {
-              "location": "PassportPage_STEPS.userClickNext()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 19654500,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User slects Passport Book",
-            "match": {
-              "location": "PassportPage_STEPS.user_slects_Passport_Book()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18671900,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User selects Standard method",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_Standard_method()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18871500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User selects Standard Delivery",
-            "match": {
-              "location": "PassportPage_STEPS.user_selects_Standard_Delivery()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 36799200,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User clicks the Calculate button",
-            "match": {
-              "location": "PassportPage_STEPS.user_clicks_the_Calculate_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10061143600,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user verifies total",
-            "match": {
-              "location": "PassportPage_STEPS.user_verifies_total()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 647394700,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user clicks next",
-            "match": {
-              "location": "PassportPage_STEPS.user_clicks_next()"
+              "location": "CountryInformationPage_STEPS.user_verifies_correct_country_info()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@passportPage"
+            "name": "@countryInformationPage"
           }
         ]
       }
     ],
-    "name": "Register Page Testing",
+    "name": "Passport Renewal",
     "description": "",
-    "id": "register-page-testing",
+    "id": "passport-renewal",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/passportPage.feature",
+    "uri": "file:src/test/resources/features/countryInformation.feature",
     "tags": [
       {
-        "name": "@passportPage",
+        "name": "@countryInformationPage",
         "type": "Tag",
         "location": {
           "line": 1,

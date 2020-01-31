@@ -34,6 +34,9 @@ public class HomePage {
     @FindBy(xpath = "//*[@class='BusinessUnitsMenu']/li[4]")
     public WebElement passportTab;
 
+    @FindBy (xpath = "//ul[@class='BusinessUnitsMenu']/li[5]")
+    public WebElement internationalTravelTab;
+
 
 
 

@@ -1,5 +1,5 @@
 @passportPage
-Feature: Register Page Testing
+Feature: Passport Renewal
 
   Scenario: Apply for U.S. Passport
     Given User opens home page

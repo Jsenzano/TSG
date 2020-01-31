@@ -13,9 +13,14 @@ public class DateUtils {
         Date date = new Date();
         return formatter.format(date);
     }
+    public static String currentDate(){
+        DateTimeFormatter date = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDateTime now = LocalDateTime.now();
+        return date.format(now);
+    }
 
     public static String currentDateTime(){
-        DateTimeFormatter date = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
+        DateTimeFormatter date = DateTimeFormatter.ofPattern("HH mm ss dd/MM/yyyy");
         LocalDateTime now = LocalDateTime.now();
         return date.format(now);
     }

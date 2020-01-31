@@ -10,6 +10,7 @@ import pages.HomePage;
 import pages.PassportPage;
 import step_definitions.step_impl.PassportPage_impl;
 import util.Driver;
+import util.Screenshots;
 import util.SeleniumUtils;
 
 public class PassportPage_STEPS {

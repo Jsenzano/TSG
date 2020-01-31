@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import pages.PassportPage;
 import util.Driver;
+import util.Screenshots;
 import util.SeleniumUtils;
 
 import javax.swing.*;
@@ -100,6 +101,7 @@ public class PassportPage_impl {
     public void clickNextToComplete() {
         SeleniumUtils.click(passportPage.finalNext_Btn);
         Assert.assertEquals("U.S. Passports", driver.getTitle());
+        Screenshots.captureScreenShot();
        // Assert.assertEquals("$50.00", passportPage.totalAmount.getText());
 
 

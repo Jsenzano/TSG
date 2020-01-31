@@ -9,6 +9,7 @@ import pages.HomePage;
 import step_definitions.step_impl.HomePage_impl;
 import util.ConfigReader;
 import util.Driver;
+import util.Screenshots;
 import util.SeleniumUtils;
 
 public class HomePage_STEPS {
@@ -30,6 +31,7 @@ public class HomePage_STEPS {
     public void verifies_title_is_U_S_Department_of_State_Bureau_of_Consular_Affairs() throws InterruptedException {
         Thread.sleep(2000);
         Assert.assertEquals("Travel",driver.getTitle());
+        Screenshots.captureScreenShot();
 
     }
 
